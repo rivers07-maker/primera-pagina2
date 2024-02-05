@@ -1,3 +1,1 @@
-# Primer Proyecto de programacion
-
-Estudiando en el instituto Alfa
+Aqui deberia haber un README file
