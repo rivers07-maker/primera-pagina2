@@ -37,10 +37,10 @@ video {
 }
 
 
-nav {
-  padding: 0 300px;
+.nav-bar {
+  max-width: 125rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 10px;
 }
@@ -49,14 +49,23 @@ nav>ul {
   text-transform: uppercase;
   line-height: 1.5;
   letter-spacing: 0.125rem;
+  display: flex;
+  gap: 80px;
 }
 
 nav>ul>li {
-  display: inline-block;
-  padding: 12px 28px;
+  list-style: none;
 }
 
-nav>ul>li>a {
+.left {
+  padding-right: 60px;
+}
+
+.right {
+  padding-left: 60px;
+}
+
+a {
   font-size: 0.875rem;
   text-decoration: none;
   color: var(--color-black);
