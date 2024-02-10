@@ -1,11 +1,14 @@
 :root {
   --color-white: #f2f2f2;
+  --color-plain-white: #fff;
   --color-black: #2e2e2e;
   --color-purple: #ad699a;
   --color-purple-low-opacity: #a85c9079;
   --color-green: #8cc63f;
   --color-brown: #6a492c;
-  font-size: 16px;
+  --color-fucsia: #c53681;
+  --transform-hero: -170px;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,16 +39,23 @@ video {
   max-width: 100%;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--color-plain-white);
+  z-index: 999;
+}
 
 .nav-bar {
   max-width: 125rem;
+  height: 95px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
 }
 
-nav>ul {
+nav ul {
   text-transform: uppercase;
   line-height: 1.5;
   letter-spacing: 0.125rem;
@@ -53,7 +63,7 @@ nav>ul {
   gap: 80px;
 }
 
-nav>ul>li {
+nav ul li {
   list-style: none;
 }
 
@@ -71,7 +81,7 @@ a {
   color: var(--color-black);
 }
 
-nav>img {
+nav img {
   width: 150px;
 }
 
@@ -83,23 +93,125 @@ nav>img {
 }
 
 h1 {
-  color: var(--color-white);
+  color: var(--color-plain-white);
   font-size: 6rem;
   text-align: center;
   font-weight: 700;
+  transform: translateY(calc((var(--transform-hero)) + 70px));
 }
 
 .hero .hero-img {
   margin-top: -10px;
-  margin-left: 150px;
+  margin-left: 300px;
 }
 
 .hero .hero-h1 {
   width: 55%;
   margin-right: 100px;
-  margin-left: -200px;
+  margin-left: -300px;
 }
 
 .hero-main-text {
   text-shadow: 0 0 8px var(--color-green);
+}
+
+main {
+  color: var(--color-brown);
+}
+
+.promociones {
+  background-color: var(--color-plain-white);
+  width: 70%;
+  transform: translateY(var(--transform-hero));
+  margin: 0 auto;
+  padding-top: 38px;
+  text-align: center;
+  height: 200px;
+}
+
+.promociones h2 {
+  font-size: 2.5rem;
+  padding-bottom: 18px;
+}
+
+.promociones p {
+  font-size: 1.125rem;
+  padding-bottom: 18px;
+}
+
+button {
+  color: var(--color-brown);
+  font-weight: 500;
+  background-color: var(--color-plain-white);
+  padding: 10px 40px;
+  border-radius: 4px;
+  border: solid 1.8px;
+  font-size: 1.125rem;
+}
+
+.pizzas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+  gap: 4rem;
+}
+
+.pizzas-text h3 {
+  font-size: 2rem;
+}
+
+.bebidas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  gap: 4rem;
+}
+
+.bebidas-text h3 {
+  font-size: 2rem;
+}
+
+.nuestra-carta {
+  padding: 80px 0 80px;
+}
+
+.nuestra-carta h2 {
+  padding: 0 24px 24px;
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tarjetas {
+  max-width: 1280px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  gap: 16px;
+  justify-content: center;
+}
+
+.tarjeta {
+  background-color: var(--color-plain-white);
+  border: solid 2px var(--color-black);
+}
+
+.tarjeta img {
+  width: 100%;
+}
+
+.tarjeta figcaption {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 16px 16px 42px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  scale: 2;
+  margin: 250px auto 280px;
 }
