@@ -216,11 +216,15 @@ button {
   margin: 250px auto 280px;
 }
 
+hr {
+  opacity: 0.2;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 240px;
   height: 240px;
 }
 
