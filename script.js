@@ -9,8 +9,6 @@ const swiper = new Swiper('.swiper', {
   effect: "fade",
   autoplay: {
     delay: 2000,
-    pauseOnMouseEnter: true,
-    disableOnInteraction: false,
   },
 
 
