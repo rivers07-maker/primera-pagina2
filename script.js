@@ -3,6 +3,9 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  },
   autoplay: {
     delay: 2000,
   },
