@@ -253,10 +253,6 @@ hr {
   background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
 }
 
-.swiper-wrapper {
-  overflow: hidden;
-}
-
 .swiper img {
   max-width: 1368px;
   margin: 0 auto;
