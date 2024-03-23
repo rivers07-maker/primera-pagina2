@@ -2,6 +2,7 @@
   --color-white: #f2f2f2;
   --color-plain-white: #fff;
   --color-black: #2e2e2e;
+  --color-beige: #d3c1ae;
   --color-purple: #ad699a;
   --color-purple-low-opacity: #dfbbd3;
   --color-green: #8cc63f;
@@ -48,7 +49,6 @@ header {
 }
 
 .nav-bar {
-  max-width: 125rem;
   height: 95px;
   display: flex;
   justify-content: center;
@@ -196,7 +196,7 @@ button {
 
 .tarjeta {
   background-color: var(--color-plain-white);
-  border: solid 2px var(--color-black);
+  border: 1px solid var(--color-beige);
 }
 
 .tarjeta img {
@@ -207,15 +207,6 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   padding: 16px 16px 42px;
-}
-
-.swiper {
-  width: auto;
-  margin: 80px auto;
-}
-
-.swiper img {
-  width: 100%;
 }
 
 hr {
@@ -256,12 +247,14 @@ hr {
   height: 50px;
 }
 
-.bg-purple {
+.swiper {
+  height: 635px;
+  margin: 80px auto;
   background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
-  height: 800px;
-  width: 1140px;
 }
 
-.swiper-slide img {
-  width: 200px;
+.swiper img {
+  max-width: 1368px;
+  margin: 0 auto;
 }
+
