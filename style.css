@@ -248,7 +248,6 @@ hr {
 }
 
 .swiper {
-  width: auto;
   height: 635px;
   margin: 80px auto;
   background-image: radial-gradient(circle, var(--color-purple-low-opacity), var(--color-purple));
